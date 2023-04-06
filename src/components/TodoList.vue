@@ -13,4 +13,12 @@ export default {
 }
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.todo-list {
+  width: 560px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 0;
+}
+</style>

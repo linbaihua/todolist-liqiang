@@ -18,8 +18,9 @@ export default {
     add() {
       if (!this.title.trim()) {
         alert('输入不能为空')
+        return false
       }
-      const todo = { id: nanoid(), title: this.title, done: true }
+      const todo = { id: nanoid(), title: this.title, done: false }
       this.addTodo(todo)
       this.title = ''
     }
@@ -29,17 +30,19 @@ export default {
 
 <style lang="less" scoped>
 .todo-header {
+  margin: 20px 0;
   input {
     width: 560px;
-    height: 28px;
+    height: 38px;
+    box-sizing: border-box;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 4px 7px;
     &:focus {
       outline: none;
-      border-color: skyblue;
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+      border: none;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(176, 176, 176, 0.6);
     }
   }
 }

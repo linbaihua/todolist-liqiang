@@ -1,0 +1,52 @@
+.todo-container {
+  width: 60%;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  padding: 20px;
+}
+.todo-container .todo-wrap h3 {
+  margin: 10px 0;
+  background-color: #ddd;
+  text-align: center;
+}
+.todo-container .todo-wrap .todo-header input {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+}
+.todo-container .todo-wrap .todo-list ul {
+  list-style: none;
+  padding: 0;
+}
+.todo-container .todo-wrap .todo-list ul li {
+  height: 30px;
+  border: 1px solid #ddd;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-container .todo-wrap .todo-list ul li:not(:last-child) {
+  border-bottom: none;
+}
+.todo-container .todo-wrap .todo-list ul li button {
+  height: 25px;
+  margin-right: 10px;
+}
+.todo-container .todo-wrap .todo-footer {
+  height: 30px;
+  background-color: #ddd;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-container .todo-wrap .todo-footer label .all {
+  margin-right: 10px;
+}
+.todo-container .todo-wrap .todo-footer button {
+  margin-right: 10px;
+}
