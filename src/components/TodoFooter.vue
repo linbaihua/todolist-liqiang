@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'TodoFooter',
-  props: [ 'todos', 'checkAllTodo', 'clearAllTodo'],
+  props: [ 'todos', 'checkAllTodo',  'clearAllTodo' ],
   computed: {
     total() {
       return this.todos.length
