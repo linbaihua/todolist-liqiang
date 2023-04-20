@@ -52,6 +52,12 @@ export default {
       this.todos = this.todos.filter(todo => {
         return !todo.done
       })
+    },
+    //更新一个todo
+    updateTodo(id, title) {
+      this.todos.forEach(todo => {
+        if (todo.id === id) todo.title = title
+      })
     }
   },
   watch: {
